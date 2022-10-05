@@ -138,7 +138,8 @@ function loadMessages() {
         url: `https://minio.judge0.com/public/ide/messages.json?${Date.now()}`,
         type: "GET",
         headers: {
-            "Accept": "application/json"
+            "x-rapidapi-host": "judge0-ce.p.rapidapi.com",
+	    "x-rapidapi-key": "060d82312fmsh6cf76cc5caf6220p1b0ef1jsnc5a290c6b6d8"
         },
         success: function (data, textStatus, jqXHR) {
             messagesData = data;
